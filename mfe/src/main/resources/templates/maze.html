@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>迷宫</title>
+  <script src="webjars/jquery/3.4.1/jquery.min.js" ></script>
+  <link rel="stylesheet" href="webjars/bootstrap/4.4.1-1/css/bootstrap.min.css">
+  <script src="webjars/bootstrap/4.4.1-1/js/bootstrap.min.js" ></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">迷宫生成器</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          方框迷宫生成
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">递归分割法</a>
+          <a class="dropdown-item" href="#">Prim树法</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">其他</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<br/>
+<div class="container">
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text" th:text="'Hello, ' + ${mazeData} + '!'"></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

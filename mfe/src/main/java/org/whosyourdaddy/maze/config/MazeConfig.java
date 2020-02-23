@@ -1,7 +1,7 @@
 package org.whosyourdaddy.maze.config;
 
 import org.springframework.context.annotation.Configuration;
-import org.whosyourdaddy.maze.service.FakeMazeService;
+import org.whosyourdaddy.maze.service.impl.FakeMazeService;
 import org.whosyourdaddy.maze.service.MazeService;
 
 /**
